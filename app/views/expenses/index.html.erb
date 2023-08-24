@@ -2,3 +2,5 @@
 <% @expenses.each do |expense| %>
   <%= expense.name %>
 <% end %>
+
+<%= link_to 'Add New Expense', new_category_expense_path(@category) %>
