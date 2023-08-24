@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
   def index
-    @categories = User.find(2).categories
+    @categories = Category.all
   end
 
   def new
