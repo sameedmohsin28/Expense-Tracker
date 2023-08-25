@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+@font-face {
+  font-family: 'nova-bold';
+  src: url('fonts/Proxima-Nova-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'nova-light';
+  src: url('fonts/Proxima-Nova-Light.ttf') format("truetype");
+}
+
+* {
+  font-family: 'nova-light', Arial, sans-serif;
+}
