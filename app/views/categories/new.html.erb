@@ -1,0 +1,18 @@
+<%= form_with model: @category, url: categories_path, local: true do |form| %>
+
+  <section class="categories-new-sub-section">
+
+    <nav class="categories-new-nav">
+      <%= link_to 'Back', categories_path, class: 'categories-new-nav-back-btn' %>
+      <h1 class="categories-new-nav-heading">ADD CATEGORY</h1>
+      <%= form.submit 'Next', class: 'categories-new-submit-btn' %>
+    </nav>
+
+    <div class="form-fields">
+      <%= form.text_field :name, placeholder: 'Category Name', class: 'individual-form-field' %>
+      <%= form.text_field :icon, placeholder: 'Category Icon Link', class: 'individual-form-field' %>
+    </div>
+
+  </section>
+
+<% end %>
