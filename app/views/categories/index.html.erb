@@ -6,7 +6,7 @@
     </nav>
 
     <div class="all-categories-container">
-      <% if @categories %>
+      <% if @categories.length != 0 %>
         <% @categories.each do |category| %>
           <%= link_to category_expenses_path(category), class: 'individual-category-container' do %>
             <div class="individual-category-image-container">
@@ -30,7 +30,7 @@
           <% end %>
         <% end %>
       <% else %>
-        <p class="no-categories-message">There are no categories created yet</p>
+        <p class="no-categories-message">There are no categories created yet.</p>
       <% end %>
     </div>
     <div class="add-new-category-btn-container">

@@ -164,6 +164,11 @@ font-size: 20px;
   font-size: 13px;
 }
 
+.no-categories-message {
+  font-size: 20px;
+  text-align: center;
+}
+
 .add-new-category-btn-container {
   position: fixed;
   bottom: 0;
@@ -327,6 +332,11 @@ font-size: 20px;
 
 .expense-creation-date {
   font-size: 13px;
+}
+
+.no-expenses-message {
+  font-size: 20px;
+  text-align: center;
 }
 
 .add-new-expense-btn-container {

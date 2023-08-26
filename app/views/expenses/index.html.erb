@@ -18,7 +18,7 @@
     </header>
 
     <div class="all-expenses-container">
-      <% if @expenses %>
+      <% if @expenses.length != 0 %>
         <% @expenses.each do |expense| %>
           <div class="individual-expense-container">
             <div class="expense-name-and-amount-container">
@@ -29,7 +29,7 @@
           </div>
         <% end %>
       <% else %>
-        <p class="no-expenses-message">There are no expenses created yet</p>
+        <p class="no-expenses-message">There are no expenses created yet.</p>
       <% end %>
     </div>
 
