@@ -4,7 +4,7 @@ RSpec.feature 'Category index page', type: :feature do
   before do
     @user1 = User.create(name: 'abc', email: 'abc@gmail.com', password: '123456')
     @category1 = Category.create(name: 'Grocery', icon: 'https://placekitten.com/200/200', user: @user1)
-    
+
     visit categories_path
   end
 
@@ -21,7 +21,7 @@ RSpec.feature 'Category index page', type: :feature do
   end
 
   scenario 'displays category creation date' do
-    expect(page).to have_content(@category1.created_at.strftime("%d %b %Y"))
+    expect(page).to have_content(@category1.created_at.strftime('%d %b %Y'))
   end
 
   scenario 'redirects to categories expenses page' do

@@ -27,6 +27,6 @@ RSpec.feature 'Expense index page', type: :feature do
   end
 
   scenario 'displays category creation date' do
-    expect(page).to have_content(@expense1.created_at.strftime("%d %b %Y"))
+    expect(page).to have_content(@expense1.created_at.strftime('%d %b %Y'))
   end
 end

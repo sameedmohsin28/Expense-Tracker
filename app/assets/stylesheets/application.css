@@ -123,10 +123,10 @@ body {
 
 .registration-new-submit-btn,
 .login-page-new-submit-btn {
-border: none;
-background-color: inherit;
-color: white;
-font-size: 20px;
+  border: none;
+  background-color: inherit;
+  color: white;
+  font-size: 20px;
 }
 
 /* -------------------- Categories Index Page ------------------------- */
@@ -195,7 +195,7 @@ font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: min(20px, 4%);
+  padding-top: 20px;
 }
 
 .individual-category-name-and-total-amount-container {
@@ -276,10 +276,10 @@ font-size: 20px;
 }
 
 .categories-new-submit-btn {
-border: none;
-background-color: inherit;
-color: white;
-font-size: 20px;
+  border: none;
+  background-color: inherit;
+  color: white;
+  font-size: 20px;
 }
 
 /* --------------------------- For All Forms -------------------------- */
@@ -454,8 +454,8 @@ font-size: 20px;
 }
 
 .expense-new-submit-btn {
-border: none;
-background-color: inherit;
-color: white;
-font-size: 20px;
+  border: none;
+  background-color: inherit;
+  color: white;
+  font-size: 20px;
 }
