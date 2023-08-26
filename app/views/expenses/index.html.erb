@@ -14,7 +14,7 @@
             <% totalamount += expense.amount %>
           <% end %>
         <% end %>
-        <p class="expense-category-total-amount-text">Total amount</p>
+        <p class="expense-category-total-amount-text"><%= @category.name %></p>
         <p class="expense-category-total-amount-sum"><%= '%.2f' % totalamount %></p>
       </div>
     </header>
