@@ -5,7 +5,7 @@
       <nav class="expenses-index-nav">
         <%= link_to 'Back', categories_path, class: 'expenses-index-nav-back-btn' %>
         <h1 class="expenses-index-nav-heading">EXPENSES</h1>
-        <div class="hidden-text-for-styling">Back</div>
+        <%= link_to 'Logout', destroy_user_session_path, class: 'expenses-index-nav-logout-btn' %>
       </nav>
       <div class="total-amount-for-transaction-expenses">
         <% totalamount = 0 %>
