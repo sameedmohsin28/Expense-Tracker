@@ -6,6 +6,8 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [ Video Description Link](#video-description)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -36,6 +38,18 @@
 
 This app contains
 - **Expenses and their Categories**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Video Description <a name="video-description"></a>
+
+- [Video Description Link](https://www.loom.com/share/d5fc732c64b848e0b89c77ebdf2fe537)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Expense Tracker](rails-xez4.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
