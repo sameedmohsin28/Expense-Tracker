@@ -1,19 +1,18 @@
-<h1>Expense#new</h1>
-
 <%= form_with model: @expense, url: category_expenses_path, local: true do |form| %>
 
-  <div>
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+  <section class="expense-new-sub-section">
 
-  <div>
-    <%= form.label :amount %>
-    <%= form.number_field :amount, step: '0.01' %>
-  </div>
+    <nav class="expense-new-nav">
+      <p class="expense-new-nav-back-btn">A</p>
+      <h1 class="expense-new-nav-heading">ADD EXPENSE</h1>
+      <%= form.submit 'Next', class: 'expense-new-submit-btn' %>
+    </nav>
 
-  <div>
-    <%= form.submit 'Add Expense' %>
-  </div>
+    <div class="form-fields">
+      <%= form.text_field :name, placeholder: 'Expense Name', class: 'individual-form-field' %>
+      <%= form.number_field :amount, step: '0.01', placeholder: 'Expense Amount', class: 'individual-form-field' %>
+    </div>
+
+  </section>
 
 <% end %>

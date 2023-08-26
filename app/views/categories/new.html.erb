@@ -1,19 +1,18 @@
-<h1>Category#new</h1>
-
 <%= form_with model: @category, url: categories_path, local: true do |form| %>
 
-  <div>
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+  <section class="categories-new-sub-section">
 
-  <div>
-    <%= form.label :icon %>
-    <%= form.text_field :icon %>
-  </div>
+    <nav class="categories-new-nav">
+      <p class="categories-new-nav-back-btn">A</p>
+      <h1 class="categories-new-nav-heading">ADD CATEGORY</h1>
+      <%= form.submit 'Next', class: 'categories-new-submit-btn' %>
+    </nav>
 
-  <div>
-    <%= form.submit 'Add Category' %>
-  </div>
+    <div class="form-fields">
+      <%= form.text_field :name, placeholder: 'Category Name', class: 'individual-form-field' %>
+      <%= form.text_field :icon, placeholder: 'Category Icon Link', class: 'individual-form-field' %>
+    </div>
+
+  </section>
 
 <% end %>

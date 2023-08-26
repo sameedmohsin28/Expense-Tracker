@@ -24,6 +24,367 @@
   src: url('fonts/Proxima-Nova-Light.ttf') format("truetype");
 }
 
+body {
+  background-color: #f0f2f1;
+}
+
 * {
   font-family: 'nova-light', Arial, sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: #434b54;
+  padding: 0;
+  margin: 0;
+}
+
+/* -------------------- Registration and Login Page ------------------------- */
+.registration-new-sub-section,
+.login-page-sub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.registration-new-nav,
+.login-page-new-nav {
+  background-color: #3778c2;
+  width: 97%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 1.5%;
+}
+
+.registration-new-nav-heading,
+.login-page-new-nav-heading {
+  color: white;
+  font-size: 22px;
+}
+
+.registration-new-nav-back-btn,
+.login-page-new-nav-back-btn {
+  color: white;
+}
+
+.registration-new-submit-btn,
+.login-page-new-submit-btn {
+border: none;
+background-color: inherit;
+color: white;
+font-size: 20px;
+}
+
+/* -------------------- Categories Index Page ------------------------- */
+.categories-index-main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.categories-index-sub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.expenses-index-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.categories-index-nav {
+  background-color: #3778c2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 27px 0;
+}
+
+.categories-index-nav-heading {
+  color: white;
+  font-size: 22px;
+}
+
+.all-categories-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 110px;
+  gap: 15px;
+}
+
+.individual-category-container {
+  background-color: white;
+  width: 90%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 20% 77% 10000%;
+  gap: 20px;
+  max-height: 125px;
+}
+
+.category-image {
+  width: 100%;
+  max-width: 123px;
+  max-height: 123px;
+}
+
+.individual-category-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: min(20px, 4%);
+}
+
+.individual-category-name-and-total-amount-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.category-name {
+  font-size: 20px;
+}
+
+.category-total-amount {
+  font-size: 20px;
+  font-family: 'nova-bold', Arial, sans-serif;
+}
+
+.category-creation-date {
+  font-size: 13px;
+}
+
+.add-new-category-btn-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #5fb523;
+}
+
+.add-new-category-btn {
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 88%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
+
+/* -------------------- Categories New Page ------------------------- */
+.categories-new-sub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.categories-new-nav {
+  background-color: #3778c2;
+  width: 97%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 1.5%;
+}
+
+.categories-new-nav-heading {
+  color: white;
+  font-size: 22px;
+}
+
+.categories-new-nav-back-btn {
+  color: white;
+}
+
+.categories-new-submit-btn {
+border: none;
+background-color: inherit;
+color: white;
+font-size: 20px;
+}
+
+/* --------------------------- For All Forms -------------------------- */
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #767676;
+}
+
+.individual-form-field {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  border-bottom: 1px solid #767676;
+}
+
+.individual-form-field:nth-last-child(1) {
+  border: none;
+}
+
+/* -------------------- Expenses Index Page ------------------------- */
+.expenses-index-main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.expenses-index-sub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.expenses-index-nav {
+  background-color: #3778c2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 27px 0;
+}
+
+.expenses-index-nav-heading {
+  color: white;
+  font-size: 22px;
+}
+
+.total-amount-for-transaction-expenses {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10px;
+  background-color: white;
+}
+
+.expense-category-total-amount-text {
+  font-size: 22px;
+}
+
+.expense-category-total-amount-sum {
+  font-size: 22px;
+  font-family: 'nova-bold', Arial, sans-serif;
+}
+
+.all-expenses-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  padding-bottom: 110px;
+  gap: 15px;
+}
+
+.individual-expense-container {
+  background-color: white;
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.expense-name-and-amount-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.expense-name {
+  font-size: 20px;
+}
+
+.expense-amount {
+  font-size: 20px;
+  font-family: 'nova-bold', Arial, sans-serif;
+}
+
+.expense-creation-date {
+  font-size: 13px;
+}
+
+.add-new-expense-btn-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #5fb523;
+}
+
+.add-new-expense-btn {
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 88%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
+
+/* -------------------- Expenses Index Page ------------------------- */
+.expense-new-sub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.expense-new-nav {
+  background-color: #3778c2;
+  width: 97%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 1.5%;
+}
+
+.expense-new-nav-heading {
+  color: white;
+  font-size: 22px;
+}
+
+.expense-new-nav-back-btn {
+  color: white;
+}
+
+.expense-new-submit-btn {
+border: none;
+background-color: inherit;
+color: white;
+font-size: 20px;
 }
