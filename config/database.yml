@@ -84,6 +84,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: Expense_Tracker_production
-  username: postgres
+  username: Expense_Tracker
   password: <%= ENV["EXPENSE_TRACKER_DATABASE_PASSWORD"] %>
