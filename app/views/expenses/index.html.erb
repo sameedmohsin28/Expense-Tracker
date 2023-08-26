@@ -3,7 +3,9 @@
 
     <header class="expenses-index-header">
       <nav class="expenses-index-nav">
+        <%= link_to 'Back', categories_path, class: 'expenses-index-nav-back-btn' %>
         <h1 class="expenses-index-nav-heading">EXPENSES</h1>
+        <div class="hidden-text-for-styling">Back</div>
       </nav>
       <div class="total-amount-for-transaction-expenses">
         <% totalamount = 0 %>

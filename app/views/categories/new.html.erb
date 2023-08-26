@@ -3,7 +3,7 @@
   <section class="categories-new-sub-section">
 
     <nav class="categories-new-nav">
-      <p class="categories-new-nav-back-btn">A</p>
+      <%= link_to 'Back', categories_path, class: 'categories-new-nav-back-btn' %>
       <h1 class="categories-new-nav-heading">ADD CATEGORY</h1>
       <%= form.submit 'Next', class: 'categories-new-submit-btn' %>
     </nav>

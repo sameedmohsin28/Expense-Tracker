@@ -3,7 +3,7 @@
   <section class="expense-new-sub-section">
 
     <nav class="expense-new-nav">
-      <p class="expense-new-nav-back-btn">A</p>
+      <%= link_to 'Back', category_expenses_path(@category), class: 'expense-new-nav-back-btn' %>
       <h1 class="expense-new-nav-heading">ADD EXPENSE</h1>
       <%= form.submit 'Next', class: 'expense-new-submit-btn' %>
     </nav>
