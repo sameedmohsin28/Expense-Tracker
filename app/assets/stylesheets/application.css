@@ -152,16 +152,12 @@ font-size: 20px;
 
 .categories-index-nav {
   background-color: #3778c2;
-  width: 97%;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 27px 1.5%;
-}
-
-.hidden-text-for-styling {
-  color: #3778c2;
+  justify-content: center;
+  padding: 27px 0;
 }
 
 .categories-index-nav-heading {
@@ -330,14 +326,17 @@ font-size: 20px;
   padding: 27px 1.5%;
 }
 
-.expenses-index-nav-back-btn,
-.expenses-index-nav-logout-btn {
+.expenses-index-nav-back-btn {
   color: white;
 }
 
 .expenses-index-nav-heading {
   color: white;
   font-size: 22px;
+}
+
+.hidden-text-for-styling {
+  color: #3778c2;
 }
 
 .total-amount-for-transaction-expenses {
