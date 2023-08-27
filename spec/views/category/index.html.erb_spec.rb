@@ -5,6 +5,8 @@ RSpec.feature 'Category index page', type: :feature do
     @user1 = User.create(name: 'abc', email: 'abc@gmail.com', password: '123456')
     @category1 = Category.create(name: 'Grocery', icon: 'https://placekitten.com/200/200', user: @user1)
 
+    sign_in @user1
+
     visit categories_path
   end
 

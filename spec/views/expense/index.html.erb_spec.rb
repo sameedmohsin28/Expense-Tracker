@@ -7,6 +7,8 @@ RSpec.feature 'Expense index page', type: :feature do
     @expense1 = Expense.create(name: 'Vegetables', amount: 24.50, author: @user1)
     @category1.expenses << @expense1
 
+    sign_in @user1
+
     visit category_expenses_path(@category1)
   end
 
