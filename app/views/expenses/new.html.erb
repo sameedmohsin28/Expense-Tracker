@@ -1,0 +1,18 @@
+<%= form_with model: @expense, url: category_expenses_path, local: true do |form| %>
+
+  <section class="expense-new-sub-section">
+
+    <nav class="expense-new-nav">
+      <%= link_to 'Back', category_expenses_path(@category), class: 'expense-new-nav-back-btn' %>
+      <h1 class="expense-new-nav-heading">ADD EXPENSE</h1>
+      <%= form.submit 'Next', class: 'expense-new-submit-btn' %>
+    </nav>
+
+    <div class="form-fields">
+      <%= form.text_field :name, placeholder: 'Expense Name', class: 'individual-form-field' %>
+      <%= form.number_field :amount, step: '0.01', placeholder: 'Expense Amount', class: 'individual-form-field' %>
+    </div>
+
+  </section>
+
+<% end %>

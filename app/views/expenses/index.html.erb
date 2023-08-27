@@ -1,0 +1,44 @@
+<section class="expenses-index-main-section">
+  <section class="expenses-index-sub-section">
+
+    <header class="expenses-index-header">
+      <nav class="expenses-index-nav">
+        <%= link_to 'Back', categories_path, class: 'expenses-index-nav-back-btn' %>
+        <h1 class="expenses-index-nav-heading">EXPENSES</h1>
+        <div class="hidden-text-for-styling">Back</div>
+      </nav>
+      <div class="total-amount-for-transaction-expenses">
+        <% totalamount = 0 %>
+        <% if @expenses %>
+          <% @expenses.each do |expense| %>
+            <% totalamount += expense.amount %>
+          <% end %>
+        <% end %>
+        <p class="expense-category-total-amount-text"><%= @category.name %></p>
+        <p class="expense-category-total-amount-sum"><%= '%.2f' % totalamount %></p>
+      </div>
+    </header>
+
+    <div class="all-expenses-container">
+      <% if @expenses.length != 0 %>
+        <% @expenses.each do |expense| %>
+          <div class="individual-expense-container">
+            <div class="expense-name-and-amount-container">
+              <p class="expense-name"><%= expense.name %></p>
+              <p class="expense-amount"><%= '%.2f' % expense.amount %></p>
+            </div>
+            <p class="expense-creation-date"><%= expense.created_at.strftime("%d %b %Y") %></p>
+          </div>
+        <% end %>
+      <% else %>
+        <p class="no-expenses-message">There are no expenses created yet.</p>
+      <% end %>
+    </div>
+
+   <div class="add-new-expense-btn-container">
+      <%= link_to 'ADD NEW EXPENSE', new_category_expense_path(@category), class: 'add-new-expense-btn' %>
+    </div>
+
+  </section>
+</section>
+

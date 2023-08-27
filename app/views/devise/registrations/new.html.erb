@@ -1,0 +1,27 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+  <section class="registration-new-sub-section">
+
+    <nav class="registration-new-nav">
+      <%= link_to 'Back', '/', class: 'registration-new-nav-back-btn' %>
+      <h1 class="registration-new-nav-heading">REGISTER</h1>
+      <%= f.submit 'Next', class: 'registration-new-submit-btn' %>
+    </nav>
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="form-fields">
+      <%= f.text_field :name, autofocus: true, placeholder: 'Full Name', class: 'individual-form-field' %>
+      
+      <%= f.email_field :email, autocomplete: "email", placeholder: 'Email', class: 'individual-form-field' %>
+
+      <%= f.password_field :password,
+        autocomplete: "new-password",
+        placeholder: 'Password (6 characters minimum)',
+        class: 'individual-form-field' %>
+
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Confirm Password', class: 'individual-form-field' %>
+    </div>
+
+  </section>
+<% end %>
