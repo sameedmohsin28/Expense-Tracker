@@ -49,7 +49,7 @@ This app contains
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Expense Tracker](rails-xez4.onrender.com)
+- [Expense Tracker](https://rails-xez4.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
